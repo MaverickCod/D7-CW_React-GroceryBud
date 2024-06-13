@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Container Style */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #0022ff;
   }
-}
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .inp {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Item Container Styles */
+  .item-container {
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .item:hover {
+    transform: scale(1.02);
+  }
+  
+  .item-inp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-inp input {
+    margin-right: 10px;
+  }
+  
+  .item p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .line-through {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* Icon Styles */
+  .item-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-icon svg {
+    color: #dc3545;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .item-icon svg:hover {
+    color: #c82333;
+  }
+  
